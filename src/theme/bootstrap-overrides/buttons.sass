@@ -1,0 +1,50 @@
+.btn
+  font-family: Poppins, sans-serif
+  font-weight: bold
+  padding-top: 10px
+  padding-bottom: 10px
+  border-radius: 5px
+
+.btn-standard
+  height: 55px
+  padding-left: 60px
+  padding-right: 60px
+  font-size: 1.6rem
+
+.btn-lg-wide
+  font-weight: bolder
+  padding: 1.5rem 8rem
+  font-size: 1.25rem
+
+.btn-sm
+  max-height: 30px
+  padding: 5px
+
+$bestDarkened: #57b01b // --best color w/ Lightness (in the HSL set) minus 30%
+
+.btn-action
+  @extend .btn-danger
+  background-color: var(--best)
+  border-color: var(--best)
+  color: var(--primary-white)
+
+  &:not(:disabled):not(.disabled):active:focus
+    box-shadow: none
+
+  &:not(:disabled):not(.disabled):active,
+  &:focus,
+  &:hover
+    background-color: $bestDarkened
+    border-color: $bestDarkened
+    box-shadow: none
+
+  &:disabled,
+  &:disabled:hover
+    background-color: var(--best)
+    border-color: var(--best)
+    color: var(--primary-white)
+    opacity: .5
+
+.btn-clear
+  background: transparent
+  border: none

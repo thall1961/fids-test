@@ -1,0 +1,40 @@
+// START navbar
+.navbar
+  border-bottom: 2px solid $border-color
+
+@include media-breakpoint-up(lg)
+  .navbar
+    height: 100px
+    .navbar-brand
+      position: relative
+      top: -10px
+
+      @media screen and (max-width: 1309px)
+        margin-right: 60px
+    .container
+      height: 101px
+      display: flex
+      align-items: center
+      #navbarSupportedContent
+        height: 100%
+    ul
+        height: 100%
+        align-items: center
+        .nav-item
+          height: 100%
+          display: flex
+          align-items: center
+          font-size: 1.5rem
+          .nav-link
+            border-right: 1px solid $border-color
+            padding: 0 30px
+            color: var(--primary-dark)
+          .nav-link:hover
+            color: var(--primary-medium)
+        .nav-item:last-child
+          .nav-link
+            border: none
+        .nav-item.active
+          border-bottom: 4px solid var(--primary-medium)
+          font-weight: bold
+// END navbar

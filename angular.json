@@ -31,7 +31,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/theme/theme.sass"
             ],
             "scripts": []
           },
@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "fids-tm-display"
+  "defaultProject": "fids-tm-display",
+  "cli": {
+    "analytics": "eb085e58-1ce6-4ce6-b176-49cd5e42c3be"
+  }
 }

@@ -1,0 +1,29 @@
+html
+  // X / 100 * 16px = 10px => X = 62.5
+  // This makes rem really easy to use. 1rem = 10px so 2rem = 20px, 2.5rem = 25px etc
+  font-size: 62.5%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  scroll-behavior: auto
+  a:hover
+    text-decoration: none
+
+  a:focus,
+  a:-webkit-any-link:focus
+    outline: none !important
+
+  button:focus
+    outline: none !important
+
+@import "~@breeze-aviation/shared-sass/variables"
+@import "variables"
+@import "~@breeze-aviation/shared-sass/maps"
+@import "~bootstrap/scss/bootstrap"
+@import "bootstrap-overrides/overrides"
+@import "globals/globals"
+@import "spacing"
+// in web-booking-app; don't need them now
+//@import "ng-select"
+//@import "mobiscroll"
+//@import "noty"
+//@import "help-center"

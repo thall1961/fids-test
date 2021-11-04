@@ -1,0 +1,177 @@
+<div class="container-fluid my-1">
+  <button class="btn btn-outline-primary" (click)="toggle(-1)">Show All Flights</button>
+  <div class="row mt-2">
+    <div *ngIf="expandCol !== 1" class="{{expandCol === -1 ? 'col-6' : 'col-12'}}" (click)="toggle(1)">
+      <table class="table table-striped">
+        <thead>
+        <tr>DEPARTURES</tr>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Flight #</th>
+          <th scope="col">Departure Time</th>
+          <th scope="col">Times</th>
+          <th scope="col">Station</th>
+          <th scope="col">Some ID</th>
+          <th scope="col">C Data</th>
+          <th scope="col">B Data</th>
+          <th scope="col">Last</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>MX106</td>
+          <td>0710</td>
+          <td>0702/0713</td>
+          <td>TPA</td>
+          <td>N192BZ</td>
+          <td>C44</td>
+          <td>B54</td>
+          <td>B0</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>MX116</td>
+          <td>1230</td>
+          <td>1230/1255</td>
+          <td>TUL</td>
+          <td>N193BZ</td>
+          <td></td>
+          <td>B66</td>
+          <td>B0</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>MX110</td>
+          <td>1340</td>
+          <td>1339/1401</td>
+          <td>XNA</td>
+          <td>N193BZ</td>
+          <td>B61</td>
+          <td>B66</td>
+          <td>B0</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>MX106</td>
+          <td>0710</td>
+          <td>0702/0713</td>
+          <td>TPA</td>
+          <td>N192BZ</td>
+          <td>C44</td>
+          <td>B54</td>
+          <td>B0</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>MX116</td>
+          <td>1230</td>
+          <td>1230/1255</td>
+          <td>TUL</td>
+          <td>N193BZ</td>
+          <td></td>
+          <td>B66</td>
+          <td>B0</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>MX110</td>
+          <td>1340</td>
+          <td>1339/1401</td>
+          <td>XNA</td>
+          <td>N193BZ</td>
+          <td>B61</td>
+          <td>B66</td>
+          <td>B0</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div *ngIf="expandCol !== 2" class="{{expandCol === -1 ? 'col-6' : 'col-12'}}" (click)="toggle(2)">
+      <table class="table table-striped">
+        <thead>
+        <tr>ARRIVALS</tr>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Flight #</th>
+          <th scope="col">Departure Time</th>
+          <th scope="col">Times</th>
+          <th scope="col">Station</th>
+          <th scope="col">Some ID</th>
+          <th scope="col">C Data</th>
+          <th scope="col">B Data</th>
+          <th scope="col">Last</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>MX106</td>
+          <td>0710</td>
+          <td>0702/0713</td>
+          <td>TPA</td>
+          <td>N192BZ</td>
+          <td>C44</td>
+          <td>B54</td>
+          <td>B0</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>MX116</td>
+          <td>1230</td>
+          <td>1230/1255</td>
+          <td>TUL</td>
+          <td>N193BZ</td>
+          <td></td>
+          <td>B66</td>
+          <td>B0</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>MX110</td>
+          <td>1340</td>
+          <td>1339/1401</td>
+          <td>XNA</td>
+          <td>N193BZ</td>
+          <td>B61</td>
+          <td>B66</td>
+          <td>B0</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>MX106</td>
+          <td>0710</td>
+          <td>0702/0713</td>
+          <td>TPA</td>
+          <td>N192BZ</td>
+          <td>C44</td>
+          <td>B54</td>
+          <td>B0</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>MX116</td>
+          <td>1230</td>
+          <td>1230/1255</td>
+          <td>TUL</td>
+          <td>N193BZ</td>
+          <td></td>
+          <td>B66</td>
+          <td>B0</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>MX110</td>
+          <td>1340</td>
+          <td>1339/1401</td>
+          <td>XNA</td>
+          <td>N193BZ</td>
+          <td>B61</td>
+          <td>B66</td>
+          <td>B0</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

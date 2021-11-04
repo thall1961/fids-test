@@ -1,0 +1,77 @@
+@import "~@breeze-aviation/shared-sass/typography"
+
+//** `<input>` border color
+$input-border:                   #e9f4fb
+
+//** Placeholder text color
+$input-color-placeholder:        $input-border
+
+.form-row
+  padding: 10px
+
+.form-group
+  border-bottom: 1px solid var($input-group-addon-border-color)
+
+  label
+    @extend .font-sm
+    font-weight: normal
+    color: var(--primary-medium)
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+  .form-control
+    font-size: 2rem
+    --background-color: white
+    padding: 0
+    font-weight: 500
+    color: var(--primary-dark)
+    border-radius: 0
+    border-top: none
+    border-right: none
+    border-bottom: 1px solid
+    border-left: none
+    border-color: $input-border
+    height: 50px
+
+    &.compact
+      font-size: 1.4rem
+      height: initial
+
+    &::placeholder
+      color: var(--primary-light)
+
+    &:focus,
+    &:active
+      outline: none
+      box-shadow: none
+
+  &.invalid
+    .form-control
+      border-color: var(--danger)
+
+    .input-group-text
+      border-color: var(--danger)
+
+  select.form-control
+    position: relative
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    //background-image: url('../../assets/icons/ArrowThinDown.svg')
+    background-repeat: no-repeat
+    background-position: right
+    background-size: 1.5rem
+
+  .input-group-text
+    background-color: white
+    border: none
+    border-bottom: 1px solid $input-border
+    border-radius: 0px
+
+  button[type="submit"]
+    width: 200px
+    height: 50px
+    float: right
